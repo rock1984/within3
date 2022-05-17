@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "types": ["node", "jest"],
+    "esModuleInterop": true,
+    "module": "commonjs",
+  }
+}

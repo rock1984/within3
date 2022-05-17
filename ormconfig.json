@@ -1,0 +1,33 @@
+[{
+    "name": "default",
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "root",
+    "database": "within3",
+    "entities": ["./src/models/*.ts"],
+    "migrations": [
+        "./src/database/migrations/*.ts"
+    ],
+    "cli": {
+        "migrationsDir": "./src/database/migrations"
+    }
+},
+{
+    "name": "test",
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "root",
+    "database": "within3_test",
+    "entities": ["./src/models/*.ts"],
+    "migrations": [
+        "./src/database/migrations/*.ts",
+        "./src/database/seeds/*.ts"
+    ],
+    "cli": {
+        "migrationsDir": "./src/database/migrations"
+    }
+}]
