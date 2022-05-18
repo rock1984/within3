@@ -5,14 +5,6 @@ export const County = objectType({
     definition(t) {
         t.nonNull.int("id");
         t.nonNull.string("name");
-        /*
-        t.nonNull.list.nonNull.field("cities", {
-            type: "City",
-            resolve(parent, args, context) {
-                return context.citiesRepository().findByCountyId(parent.id);
-            },
-        });
-        */
     },
 });
 

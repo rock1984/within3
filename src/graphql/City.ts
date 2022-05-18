@@ -5,11 +5,6 @@ export const City = objectType({
     definition(t) {
         t.nonNull.int("id");
         t.nonNull.string("name");
-        /*
-        t.field("county", {
-            type: "County"
-        });
-        */
     },
 });
 

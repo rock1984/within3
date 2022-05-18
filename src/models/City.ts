@@ -1,5 +1,4 @@
-import { Column, Entity, JoinColumn, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
-import County from './County';
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity('cities')
 class City {
@@ -9,15 +8,6 @@ class City {
 
     @Column()
     name: string;
-
-    /*
-    @Column()
-    county_id: number;
-
-    @ManyToOne(() => County, { eager: true })
-    @JoinColumn({ name: 'county_id' })
-    county: County;
-    */
 
 }
 
